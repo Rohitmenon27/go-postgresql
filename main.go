@@ -20,7 +20,7 @@ type sandbox struct {
 }
 
 func init() {
-	connStr := "postgres://postgres:urvashi2020@localhost/postgres?sslmode=disable"
+	connStr := "postgres://postgres:password@localhost/postgres?sslmode=disable"
 	db, err = sql.Open("postgres", connStr)
 	if err != nil {
 		panic(err)
